@@ -74,8 +74,25 @@ div.container {
 header {
 	display: flex;
 	justify-content: space-evenly;
+	margin-bottom: 15px;
+	position: fixed;
+	background: black;
+	height: 10%;
+	width: 100vw;
+	left: 0px;
+	z-index: 5;
+}
+
+.logo {
 	margin: 15px auto;
-	padding-bottom: 100px;
+}
+
+.invert { 
+	filter: invert(100%); 
+}
+
+.logo:hover {
+	filter: invert(50%);
 }
 
 nav {
@@ -88,17 +105,26 @@ nav a {
 	color: grey;
 	margin: 0px 50px;
 }
+
+nav a:hover {
+	color: white;
+}
+
 .section-cta {
-	display: flex;
-	justify-content: space-evenly;
-	margin-bottom: 100px;
-	align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+    align-items: center;
 }
 
 section.section-cta div {
 	text-align: center;
 	width: 25%;
 	margin-left: 90px;
+}
+
+section.section-cta img {
+	filter: drop-shadow(6px 3px 8px black);
 }
 
 section div h1 {
@@ -114,6 +140,12 @@ section div h1 {
 	flex-direction: column;
 	padding: 0px 35px; 
 	background-color: darkcyan;
+}
+
+.box-shadow {
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(218,218,218,1);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(218,218,218,1);
+	box-shadow: 10px 10px 5px 0px rgba(218,218,218,1);
 }
 
 section.services article.description {
@@ -151,6 +183,7 @@ section.services > article > button {
 
 button:hover {
 	cursor: pointer;
+	animation: bounce 0.5s linear;
 }
 
 hr {
@@ -173,6 +206,7 @@ section.main-content div {
 
 section.main-content img {
 	width: 100%;
+	margin-top: 90px;
 }
 
 section.facts {
@@ -211,4 +245,18 @@ footer address a {
 footer p {
 	text-align: center;
     padding: 100px;
+}
+
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0px)
+	  }
+	50% {
+		transform: translateY(10px)
+	  }  
+	
+	100% {
+		transform: translateY(0px)
+	  }  
 }
