@@ -298,6 +298,143 @@ footer p {
 }
 /* ---------------------- */
 
+/* media queries */
+
+@media screen and (max-width: 500px) {
+	div.container {
+		width: 100vw;
+	}
+
+	/* general styling of header for all pages */
+	header {
+		height: 45%;
+		width: 100%;
+		flex-direction: column-reverse;
+		font-size: 25px;
+		padding-bottom: 15px;
+	}
+
+	nav {
+		flex-direction: column;
+		line-height: 2rem;
+	}
+
+	header a {
+		margin: 0px auto;
+	}
+
+	/* styling for home page */
+	section.section-cta {
+		flex-direction: column;
+		margin: 0;
+	}
+
+	section.section-cta div {
+		margin: 0;
+		width: 100%;
+		margin-top: 300px;
+	}
+
+	section div h1 {
+		font-size: 50px;
+	}
+
+	section.section-cta img {
+		margin: 20px auto;
+		width: 15rem;	
+	}
+
+	section.main-content {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	section.main-content h3 {
+		font-size: 30px;
+	}
+
+	section.main-content div {
+		width: 100%;
+		padding: 0 30px;
+	}
+/* ---------------- */
+
+/* responsive service page */
+section.services {
+	margin-top: 200px;
+}
+
+section.services article .mobile {
+	padding: 20px 20px;
+}
+
+.services article p {
+    padding: 15px 0px;
+}
+
+button {
+    padding: 5px 0px;
+    font-size: 12px;
+}
+
+section.services .description {
+	padding: 0px 25px;
+    margin-bottom: 125px;
+    text-align: center;
+}
+
+section.services article {
+	width: 85%;
+	padding: 0px 15px;
+	height: 275px;
+}
+
+section.facts {
+	flex-direction: column;
+	text-align: center;
+}
+
+section.facts article p {
+	padding: 0 25px;
+}
+
+ul {
+	list-style: none;
+	margin-left: 0;
+}
+
+section.facts img {
+	margin: 20px 0px;
+}
+
+/* --------------- */
+
+/* responsive product page */
+
+.product {
+	margin-top: 200px;
+}
+
+div.product-container {
+	flex-direction: column;
+}
+
+div.container .product-card {
+	width: 100%;
+}
+
+
+
+/* general styling of footer for all pages */
+	footer {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* --------------- */
+
 
 /* animations */
 @keyframes bounce {
